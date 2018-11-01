@@ -17,14 +17,14 @@ Pod::Spec.new do |s|
 
   s.name         = "ImageBrowser"
   s.version      = "0.0.1"
-  s.summary      = "A clone of UIImagePickerController with multiple selection support."
+  s.summary      = "this is a image browser test"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "A clone of UIImagePickerController with multiple selection support. this is a test"
+  s.description  = "this is a image browser test please see it"
 
   s.homepage     = "https://github.com/T-Grail/ImageBrowser"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/T-Grail/ImageBrowser" }
+  s.source       = { :git => "https://github.com/T-Grail/ImageBrowser.git"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,12 +89,11 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-s.source_files     = "QBImagePicker/*.{h,m}"
-  s.exclude_files    = "QBImagePicker/QBImagePicker.h"
-  s.resource_bundles = { "QBImagePicker" => "QBImagePicker/*.{lproj,storyboard}" }
-  s.platform         = :ios, "8.0"
+
+  s.source_files  ="ImageBrowser/*.{h,m}"
+    s.platform         = :ios, "8.0"
   s.requires_arc     = true
-  s.frameworks       = "Photos"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
